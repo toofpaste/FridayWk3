@@ -18,7 +18,11 @@ function checkNum(){
     };
   };
 };
-
+function print(){
+  for(var y = 0; y < strNum.length; y++){
+    $('ol#print').append("<li>" + strNum[y] + "</li>");
+  };
+};
 
 
 
@@ -29,8 +33,11 @@ $(function(){
   $('#formOne').submit(function(event){
       event.preventDefault();
       var intNum = $('input#number').val();
+      strNum = [];
       pushNum(intNum);
       checkNum();
+      $("ol#print").empty();
+      print();
       console.log(strNum);
     });
 
