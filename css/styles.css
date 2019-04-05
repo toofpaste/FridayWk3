@@ -59,6 +59,9 @@ ol {
   background-color: #e7fee8;
   font-family: 'Orbitron', sans-serif;
 }
+label {
+  font-family: 'Courgette', cursive;
+}
 button {
   opacity: 0.8;
   margin-left: 40%;
