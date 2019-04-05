@@ -38,7 +38,6 @@ function printRev(){
 };
 
 $(function(){
-  $("body").slideDown();
   $("#top").fadeIn(4000);
   $("#fade").fadeIn(2000);
   $("button").hover(function() {

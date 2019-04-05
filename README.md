@@ -6,7 +6,7 @@
 
 ## Description
 
-_._
+_Take in a number from the user. Count up to that number and replace every "3" with im sorry im afraid i cant do that every number with a "2" with a boop! and replace every number with a "1" with a beep!_
 
 ## Setup/Installation Requirements
 
@@ -31,7 +31,7 @@ _Possible spelling errors_
 | Change all numbers that contain 3 to "I'm sorry, Dave. I'm afraid i can't do that." | 3 | I'm sorry, Dave. I'm afraid i can't do that. |
 | Check for which number comes first in a number with multiple digits | 32 | I''m sorry, Dave. I'm afraid i can't do that. |
 | Check for which number comes first in a number with multiple digits | 23 | Boop. |
-| The user can add new numbers are replace the previous one | 3 | "0", "Beep!", "Boop", "I'm sorry......" | 
+| The user can add new numbers are replace the previous one | 3 | "0", "Beep!", "Boop", "I'm sorry......" |
 
 ## Support and contact details
 
