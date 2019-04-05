@@ -31,10 +31,14 @@ h3 {
 }
 ol {
   border: 2px solid grey;
-  margin-left: 30%;
-  margin-right: 30%;
+  /* margin-left: 30%;
+  margin-right: 30%; */
   background-color: #e7fee8;
   font-family: 'Orbitron', sans-serif;
+}
+button {
+  opacity: 0.8;
+  margin-left: 40%;
 }
 #fadeList{
   opacity: 0.8;

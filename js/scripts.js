@@ -42,12 +42,12 @@ function printRev(){
 
 
 $(function(){
-  $("#top").fadeToggle(4000);
-  $("#fade").fadeToggle(2000);
+  $("#top").fadeIn(4000);
+  $("#fade").fadeIn(2000);
   $('#formOne').submit(function(event){
       event.preventDefault();
-      $("#fadeList").fadeToggle(1500);
-      $("#fadeRever").fadeToggle(3000);
+      $("#fadeList").fadeIn(1500);
+      $("#fadeRever").fadeIn(3000);
       var name = $('input#name').val();
       var intNum = $('input#number').val();
       strNum = [];
