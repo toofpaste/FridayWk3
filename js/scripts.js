@@ -5,12 +5,12 @@ function pushNum(num){
   };
 };
 
-function checkNum(){
+function checkNum(name){
   var holdNum = "";
   for(var x = 0; x < strNum.length; x++){
     holdNum = strNum[x];
     if(holdNum.includes("3")){
-      strNum[x] = "I'm sorry, Dave. I'm afraid i can't do that";
+      strNum[x] = "I'm sorry, " + name + ". I'm afraid i can't do that";
     }else if(holdNum.includes("2")){
       strNum[x] = "Boop!";
     }else if(holdNum.includes("1")){
@@ -32,10 +32,11 @@ function print(){
 $(function(){
   $('#formOne').submit(function(event){
       event.preventDefault();
+      var name = $('input#name').val();
       var intNum = $('input#number').val();
       strNum = [];
       pushNum(intNum);
-      checkNum();
+      checkNum(name);
       $("ol#print").empty();
       print();
       console.log(strNum);
