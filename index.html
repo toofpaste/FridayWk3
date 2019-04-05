@@ -8,24 +8,46 @@
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
     <title>Beep Boop</title>
   </head>
   <body>
-    <div class="container">
-            <form id="formOne">
-              <div class="form-group">
-                <label for="name">Enter Your Name</label>
-                <input id="name" class="form-control" type="text">
-                <label for="number">Enter a Number</label>
-                <input id="number" class="form-control" type="number">
-              </div>
-              <button type="submit" class="btn btn-success">Start the Beep Boop</button>
-            </form>
-            <ol start = "0" id = "print">
+    <div id="fade">
+      <div id="top">
+        <div class="jumbotron">
+          <h2>It was going to be a lonely trip back.</h2>
+          <h1>HELLO, WELCOME TO MY MACHINE</h1>
+          <h2>It was going to be a lonely trip back.</h2>
+        </div>
+      </div>
+      <div class="container">
+              <form id="formOne">
+                <div class="form-group">
+                  <label for="name">Enter Your Name</label>
+                  <input id="name" class="form-control" type="text">
+                  <label for="number">Enter a Number</label>
+                  <input id="number" class="form-control" type="number">
+                </div>
+                <button type="submit" class="btn btn-default">Start the Beep Boop</button>
+              </form>
+            <div id="fadeList">
+              <h3>List</h3>
+              <ol start = "0" id = "print">
 
-            </ol>
+              </ol>
+            </div>
+            <div id = "fadeRever">
+              <h3>List Reversed</h3>
+              <ol reversed id = "reversed">
+
+              </ol>
+
+
+            </div>
 
 
       </div>
+    </div>
   </body>
 </html>

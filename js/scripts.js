@@ -24,14 +24,30 @@ function print(){
   };
 };
 
+function reverse(num){
+  for(var t = num; t >= 0; t--){
+        strNum.push("" + t);
+  };
+};
+
+function printRev(){
+  for(var y = 0; y < strNum.length; y++){
+    $('ol#reversed').append("<li>" + strNum[y] + "</li>");
+  };
+};
+
 
 
 
 
 
 $(function(){
+  $("#top").fadeToggle(4000);
+  $("#fade").fadeToggle(2000);
   $('#formOne').submit(function(event){
       event.preventDefault();
+      $("#fadeList").fadeToggle(1500);
+      $("#fadeRever").fadeToggle(3000);
       var name = $('input#name').val();
       var intNum = $('input#number').val();
       strNum = [];
@@ -39,7 +55,11 @@ $(function(){
       checkNum(name);
       $("ol#print").empty();
       print();
-      console.log(strNum);
+      strNum = [];
+      reverse(intNum);
+      checkNum(name)
+      $("ol#reversed").empty();
+      printRev();
     });
 
 });
