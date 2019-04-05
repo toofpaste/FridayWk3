@@ -4,24 +4,47 @@
 h1 {
 font-family: 'Orbitron', sans-serif;
 }
-.jumbotron{
+.jumbotron {
   color: grey;
   text-align: center;
-  font-size: 40px;
-  background-color: #2c0009;
+  font-size: 20px;
+  background-color: #cefcfb;
 }
 .jumbotron h2 {
+  font-size: 50px;
   text-align: center;
   font-family: 'Libre Barcode 39', cursive;
-  color:white;
+  color: #e8e8e6;
 }
 body {
   background-color: #500009;
   color: white;
 }
-
+#bye {
+  display: none;
+  color: red;
+}
+#bye1 {
+  display: none;
+  color: #540918;
+  font-weight: bolder;
+}
+img {
+  width: 10%;
+  height: 10%;
+}
+#mad{
+  display: none;
+}
+#mad2{
+  display: none;
+}
 #fade {
   display: none;
+}
+#dont {
+  display: none;
+  color: red;
 }
 h3 {
   margin-left: 30%;

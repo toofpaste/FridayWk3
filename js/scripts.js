@@ -1,4 +1,5 @@
 var strNum = [];
+var hoverDetect = 0;
 function pushNum(num){
   for(var i = 0; i <= num; i++){
     strNum.push("" + i);
@@ -36,18 +37,34 @@ function printRev(){
   };
 };
 
-
-
-
-
-
 $(function(){
   $("#top").fadeIn(4000);
   $("#fade").fadeIn(2000);
+
+  $("button").hover(function() {
+    if(hoverDetect === 0){
+    console.log(hoverDetect);
+      $("#welcome").hide();
+      $("#dont").show();
+    };
+    }, function(){
+      if(hoverDetect === 0){
+      $("#dont").hide();
+      $("#welcome").show();
+    };
+    });
   $('#formOne').submit(function(event){
-      event.preventDefault();
-      $("#fadeList").fadeIn(1500);
-      $("#fadeRever").fadeIn(3000);
+    event.preventDefault();
+    hoverDetect = 1;
+    $("#dont").hide();
+    $("#happy").hide();
+    $("#happy2").hide();
+    $("#welcome").hide();
+    $("#welcome2").hide();
+    $("#fadeList").fadeIn(1500);
+    $("#fadeRever").fadeIn(3000);
+    $("#mad").fadeIn(2000);
+    $("#mad2").fadeIn(2000);
       var name = $('input#name').val();
       var intNum = $('input#number').val();
       strNum = [];
@@ -60,6 +77,19 @@ $(function(){
       checkNum(name)
       $("ol#reversed").empty();
       printRev();
+      name =  name.toUpperCase();
+      $("#bye").text(name + ", YOU DIDN'T LISTEN").val();
+      $("#bye").fadeIn(1000);
+
+
+
+
+
+      for(var flash = 0; flash <= 50; flash++){
+        $("#bye1").fadeToggle(1000);
+        // $("#bye1").fadeOut(1000);
+      };
+      // $("#bye1").fadeIn(3000);
     });
 
 });
